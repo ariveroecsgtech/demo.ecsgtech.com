@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animal Health Clinic — Grooming & Salud Animal</title>
+<meta name="description" content="Grooming, baño y peluquería para mascotas, además de consultas médicas, cirugía y hospitalización. Todo bajo un mismo techo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M13 22c0-5 3-9 7-9s7 4 7 9-3 6-7 6-7-1-7-6z" fill="currentColor" opacity="0.14"/>
+          <circle cx="14" cy="14" r="2.6" fill="currentColor"/>
+          <circle cx="26" cy="14" r="2.6" fill="currentColor"/>
+          <circle cx="9" cy="19" r="2.2" fill="currentColor"/>
+          <circle cx="31" cy="19" r="2.2" fill="currentColor"/>
+          <path d="M15 24c1.5 2 3 2.6 5 2.6s3.5-.6 5-2.6" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">Animal Health<em>Clinic</em></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#grooming">Grooming</a>
+      <a href="#medico">Salud Animal</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#testimonios">Clientes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+12035550100" class="phone-pill">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (203) 555-0100
+      </a>
+      <a href="#reservar" class="btn btn-primary">Reservar cita</a>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Grooming &amp; Medicina Veterinaria — un mismo techo</p>
+      <h1>Bienestar completo para tu mascota, <span class="ital">de la bañera al quirófano.</span></h1>
+      <p class="hero-sub">En Animal Health Clinic combinamos un salón de grooming cálido y cuidadoso con un centro médico veterinario equipado para consultas, cirugía y hospitalización. Un solo lugar, un solo historial, la misma atención.</p>
+      <div class="hero-cta-row">
+        <a href="#reservar" class="btn btn-amber" data-tab-target="grooming">Reservar Grooming</a>
+        <a href="#reservar" class="btn btn-teal" data-tab-target="medico">Reservar Consulta</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>12+</strong><span>años de experiencia</span></div>
+        <div><strong>24/7</strong><span>hospitalización</span></div>
+        <div><strong>3,400+</strong><span>mascotas atendidas</span></div>
+      </div>
+    </div>
+
+    <div class="hero-card" aria-hidden="true">
+      <div class="kennel-card">
+        <div class="kennel-card-tabs">
+          <span class="k-tab active">Ficha de Grooming</span>
+          <span class="k-tab">Ficha Médica</span>
+        </div>
+        <div class="kennel-card-body">
+          <div class="k-row"><span>Paciente</span><strong>Toby</strong></div>
+          <div class="k-row"><span>Especie</span><strong>Canino · Beagle</strong></div>
+          <div class="k-row"><span>Servicio</span><strong>Baño + Corte</strong></div>
+          <div class="k-row"><span>Próxima cita</span><strong>Jue 09 · 10:30am</strong></div>
+          <div class="k-stamp">Atendido en Animal Health Clinic</div>
+        </div>
+      </div>
+      <div class="hero-card-blob" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GROOMING SERVICES ===== -->
+<section class="services services-grooming" id="grooming">
+  <div class="section-inner">
+    <p class="eyebrow eyebrow-amber">Salón de Grooming</p>
+    <h2>Cuidado que se nota en cada cepillada</h2>
+    <p class="section-lede">Baño, corte y peluquería pensados para la raza, el pelaje y la personalidad de tu mascota — con productos hipoalergénicos y manejo de bajo estrés.</p>
+
+    <div class="card-grid">
+      <article class="service-card">
+        <div class="service-icon">🛁</div>
+        <h3>Baño &amp; Secado</h3>
+        <p>Shampoo según tipo de piel, secado a mano y cepillado de desenrede.</p>
+        <span class="price-tag">Desde $35</span>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">✂️</div>
+        <h3>Corte de Cabello</h3>
+        <p>Estilo de raza o a medida, con tijera y máquina, terminado en detalles de cara y patas.</p>
+        <span class="price-tag">Desde $45</span>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">💅</div>
+        <h3>Uñas &amp; Almohadillas</h3>
+        <p>Corte de uñas, limado y limpieza de almohadillas para evitar grietas.</p>
+        <span class="price-tag">Desde $15</span>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">✨</div>
+        <h3>Spa Completo</h3>
+        <p>Baño, corte, uñas, limpieza de oídos y perfume — el paquete completo.</p>
+        <span class="price-tag">Desde $70</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MEDICAL SERVICES ===== -->
+<section class="services services-medical" id="medico">
+  <div class="section-inner">
+    <p class="eyebrow eyebrow-teal">Salud Animal</p>
+    <h2>Medicina veterinaria de verdad, en el mismo lugar</h2>
+    <p class="section-lede">Consultas generales, procedimientos quirúrgicos y hospitalización con monitoreo continuo — con veterinarios certificados y equipo propio.</p>
+
+    <div class="card-grid">
+      <article class="service-card service-card-medical">
+        <div class="service-icon">🩺</div>
+        <h3>Consulta General</h3>
+        <p>Chequeo, vacunación, desparasitación y planes de prevención por edad.</p>
+      </article>
+      <article class="service-card service-card-medical">
+        <div class="service-icon">🔬</div>
+        <h3>Diagnóstico</h3>
+        <p>Laboratorio, rayos X y ecografía para decisiones clínicas informadas.</p>
+      </article>
+      <article class="service-card service-card-medical">
+        <div class="service-icon">🏥</div>
+        <h3>Cirugía</h3>
+        <p>Procedimientos programados y de urgencia, con quirófano equipado y anestesia monitoreada.</p>
+      </article>
+      <article class="service-card service-card-medical">
+        <div class="service-icon">💉</div>
+        <h3>Hospitalización</h3>
+        <p>Observación 24/7, fluidoterapia y cuidados intensivos para recuperación segura.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOKING ===== -->
+<section class="booking" id="reservar">
+  <div class="section-inner">
+    <p class="eyebrow">Reservar cita</p>
+    <h2>Cuéntanos qué necesita tu mascota</h2>
+    <p class="section-lede">Llena la ficha correspondiente y te contactamos para confirmar horario por teléfono o WhatsApp.</p>
+
+    <div class="booking-panel">
+      <div class="kennel-card-tabs booking-tabs" role="tablist">
+        <button class="k-tab active" role="tab" aria-selected="true" data-tab="grooming">🐾 Ficha de Grooming</button>
+        <button class="k-tab" role="tab" aria-selected="false" data-tab="medico">🩺 Ficha Médica</button>
+      </div>
+
+      <!-- FORMSPREE ENDPOINT: reemplaza YOUR_FORM_ID por el ID real de tu formulario -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="booking-form" id="groomingForm" data-panel="grooming">
+        <input type="hidden" name="tipo_de_cita" value="Grooming">
+        <div class="form-grid">
+          <label>Nombre del dueño
+            <input type="text" name="nombre_dueno" required>
+          </label>
+          <label>Teléfono / WhatsApp
+            <input type="tel" name="telefono" required>
+          </label>
+          <label>Nombre de la mascota
+            <input type="text" name="mascota" required>
+          </label>
+          <label>Especie / Raza
+            <input type="text" name="raza" placeholder="Ej. Canino · Poodle">
+          </label>
+          <label>Servicio deseado
+            <select name="servicio" required>
+              <option value="">Selecciona…</option>
+              <option>Baño &amp; Secado</option>
+              <option>Corte de Cabello</option>
+              <option>Uñas &amp; Almohadillas</option>
+              <option>Spa Completo</option>
+            </select>
+          </label>
+          <label>Fecha preferida
+            <input type="date" name="fecha_preferida">
+          </label>
+          <label class="full-width">Notas adicionales
+            <textarea name="notas" rows="3" placeholder="Alergias, temperamento, algo que debamos saber…"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-amber btn-block">Enviar solicitud de Grooming</button>
+      </form>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="booking-form hidden" id="medicoForm" data-panel="medico">
+        <input type="hidden" name="tipo_de_cita" value="Médica">
+        <div class="form-grid">
+          <label>Nombre del dueño
+            <input type="text" name="nombre_dueno" required>
+          </label>
+          <label>Teléfono / WhatsApp
+            <input type="tel" name="telefono" required>
+          </label>
+          <label>Nombre de la mascota
+            <input type="text" name="mascota" required>
+          </label>
+          <label>Especie / Raza
+            <input type="text" name="raza" placeholder="Ej. Felino · Siamés">
+          </label>
+          <label>Motivo de consulta
+            <select name="motivo" required>
+              <option value="">Selecciona…</option>
+              <option>Consulta general</option>
+              <option>Vacunación</option>
+              <option>Diagnóstico / Laboratorio</option>
+              <option>Cirugía</option>
+              <option>Hospitalización</option>
+              <option>Emergencia</option>
+            </select>
+          </label>
+          <label>Nivel de urgencia
+            <select name="urgencia">
+              <option>Puede esperar (agendar cita)</option>
+              <option>Pronto (próximos 1-2 días)</option>
+              <option>Urgente / Emergencia</option>
+            </select>
+          </label>
+          <label class="full-width">Síntomas o motivo detallado
+            <textarea name="detalle" rows="3" placeholder="Describe lo que está pasando…" required></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-teal btn-block">Enviar solicitud médica</button>
+        <p class="emergency-note">¿Es una emergencia ahora mismo? Llama directo al <a href="tel:+12035550100">(203) 555-0100</a> en lugar de esperar respuesta al formulario.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="team" id="equipo">
+  <div class="section-inner">
+    <p class="eyebrow">Nuestro equipo</p>
+    <h2>Manos entrenadas, criterio clínico</h2>
+    <div class="team-grid">
+      <article class="team-card">
+        <div class="team-photo" aria-hidden="true"></div>
+        <h3>Dra. Marina Costa</h3>
+        <span>Veterinaria · Cirugía General</span>
+      </article>
+      <article class="team-card">
+        <div class="team-photo" aria-hidden="true"></div>
+        <h3>Dr. Elián Torres</h3>
+        <span>Veterinario · Medicina Interna</span>
+      </article>
+      <article class="team-card">
+        <div class="team-photo" aria-hidden="true"></div>
+        <h3>Sofía Reyes</h3>
+        <span>Groomer Senior · 8 años de experiencia</span>
+      </article>
+      <article class="team-card">
+        <div class="team-photo" aria-hidden="true"></div>
+        <h3>Diego Marín</h3>
+        <span>Groomer · Especialista en razas de pelo largo</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonios">
+  <div class="section-inner">
+    <p class="eyebrow">Clientes</p>
+    <h2>Lo que dicen las familias que confían en nosotros</h2>
+    <div class="testi-grid">
+      <blockquote>
+        <p>“Llevé a mi gato para una cirugía y salió con el pelaje recién arreglado también. Un solo viaje, todo resuelto.”</p>
+        <cite>— Camila R., dueña de Simón</cite>
+      </blockquote>
+      <blockquote>
+        <p>“El equipo fue muy paciente con mi perro, que es súper nervioso en el groomer. Se notó el cuidado.”</p>
+        <cite>— Jonathan P., dueño de Rocky</cite>
+      </blockquote>
+      <blockquote>
+        <p>“Hospitalizaron a mi perra tres días y me mantuvieron informado en todo momento. Gracias infinitas.”</p>
+        <cite>— Laura M., dueña de Nala</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER / CONTACT ===== -->
+<footer class="site-footer" id="contacto">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <span class="logo-text footer-logo">Animal Health<em>Clinic</em></span>
+      <p>Grooming y medicina veterinaria bajo un mismo techo.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="WhatsApp">WA</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p>123 Main Street<br>Norwalk, CT 06850</p>
+      <p><a href="tel:+12035550100">(203) 555-0100</a></p>
+      <p><a href="mailto:info@animalhealthclinic.com">info@animalhealthclinic.com</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Horario</h4>
+      <p>Lun – Vie: 8:00am – 7:00pm</p>
+      <p>Sáb: 9:00am – 3:00pm</p>
+      <p>Hospitalización: 24/7</p>
+    </div>
+    <div class="footer-col">
+      <h4>Enlaces</h4>
+      <p><a href="#grooming">Grooming</a></p>
+      <p><a href="#medico">Salud Animal</a></p>
+      <p><a href="#reservar">Reservar cita</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Animal Health Clinic. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
